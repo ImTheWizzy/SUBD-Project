@@ -23,6 +23,10 @@ body {
     overflow-x: hidden;
 }
 
+.browser-default ul {
+    list-style-type: disc;
+}
+
 .wrapper {
     display: grid;
 }
@@ -32,7 +36,7 @@ body {
     background-position: center;
     background-size: cover;
     position: relative;
-    min-height: 31.2rem;
+    min-height: 30rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -56,113 +60,6 @@ body {
     color: var(--light);
 }
 
-.main-nav {
-    background: var(--light);
-    height: 4rem;
-    width: 100%;
-}
-
-.logo {
-    position: relative;
-    display: flex;
-    -webkit-box-flex: 1;
-    flex: 1;
-    -webkit-box-align: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.logo a {
-    text-decoration: none;
-}
-
-.logo-text {
-    color: var(--dark);
-    font-size: 1.5rem;
-    padding-left: 1rem;
-    cursor: pointer;
-}
-
-.fa-utensils {
-    padding-left: 1rem;
-    position: relative;
-    color: var(--dark);
-    cursor: pointer;
-}
-
-.upload {
-    -webkit-box-align: center;
-    -webkit-box-flex: 1;
-    align-items: center;
-    display: flex;
-    flex: 1;
-    background: #8bc34a;
-    border-radius: 5px;
-    position: absolute;
-    cursor: pointer;
-    height: 65%;
-    width: 10.5rem;
-    left: 88%;
-    -webkit-transition: 0.25s;
-    transition: 0.25s;
-}
-
-.upload:hover {
-    background: #7cb342;
-}
-
-.upload-text {
-    color: var(--light);
-    font-size: 1.2rem;
-    padding-left: 0.5rem;
-    font-weight: normal;
-}
-
-.fa-upload {
-    padding-left: 0.5rem;
-    position: relative;
-    color: var(--light);
-}
-
-.login {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -webkit-box-align: center;
-    -webkit-box-flex: 1;
-    align-items: center;
-    display: flex;
-    flex: 1;
-    border: 2px solid var(--dark);
-    border-radius: 5px;
-    position: absolute;
-    cursor: pointer;
-    height: 65%;
-    width: 7rem;
-    left: 79.5%;
-    opacity: 0.4;
-    -webkit-transition: 0.25s;
-    transition: 0.25s;
-}
-
-.login:hover {
-    opacity: 0.75;
-}
-
-.login-text {
-    color: var(--dark);
-    font-size: 1.2rem;
-    padding-left: 1rem;
-    font-weight: normal;
-}
-
-.fa-user {
-    padding-left: 1rem;
-    position: relative;
-    color: var(--dark);
-}
-
 .landing-recipes-container {
     position: relative;
     min-height: 35rem;
@@ -183,6 +80,10 @@ body {
 
 .text {
     font-size: 1.25rem;
+}
+
+.hoverable {
+    cursor: pointer;
 }
 
 .search {
@@ -214,11 +115,76 @@ nav.nav-center ul li a {
     display: inline-block;
 }
 
+.recipe-picture-container {
+    background: url("https://source.unsplash.com/random/1921x1080");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 31rem;
+    width: 100%;
+    padding: 3rem;
+}
+
+.recipe-name {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: normal;
+    color: var(--dark);
+}
+
+.recipe-container {
+    position: relative;
+    min-height: 35rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    margin: 4rem;
+}
+
+.recipe-name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.recipe-text {
+    font-size: 1.25rem;
+}
+
+.image-cropper {
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.image-cropper img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+}
+
+.username {
+    margin-left: 1rem;
+}
+
+ol li {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+ol li p {
+    font-weight: normal;
+}
+
 footer {
     background: var(--dark);
     color: var(--light);
     text-align: center;
-    margin: 0 4rem 1rem 4rem;
+    margin: 4rem 4rem 1rem 4rem;
     padding: 1px;
 }
 

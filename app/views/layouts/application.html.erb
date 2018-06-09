@@ -16,40 +16,25 @@
   </head>
 
   <body>
-      <!-- <nav class="main-nav">
-          <div class="logo">
-              <i class="fas fa-utensils fa-3x" onclick="window.location.href='/'"></i>
-              <h6 class="logo-text" onclick="window.location.href='/'">Lorem Impsum</h6>
-              <div class="login" onclick="window.location.href='/login'">
-                  <h6 class="login-text">Login</h6>
-                  <i class="far fa-user fa-3x"></i>
-              </div>
-              <div class="upload" onclick="window.location.href='/upload'">
-                  <h6 class="upload-text">Upload recipe</h6>
-                  <i class="fas fa-upload fa-2x"></i>
-              </div>
-          </div>
-      </nav> -->
+    <nav>
+      <div class="nav-wrapper white">
+        <a href="/" class="brand-logo grey-text text-darken-3">Lorem Ipsum</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/login" class="text grey-text text-darken-3"><i class="material-icons right">person_outline</i>Login</a></li>
+          <li><a href="/upload" class="text grey-text text-darken-3"><i class="material-icons right">file_upload</i>Upload recipe</a></li>
+        </ul>
+      </div>
+    </nav>
 
-        <nav>
-          <div class="nav-wrapper white">
-            <a href="/" class="brand-logo grey-text text-darken-3">Lorem Ipsum</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="/login" class="text grey-text text-darken-3"><i class="material-icons right">person_outline</i>Login</a></li>
-              <li><a href="/upload" class="text grey-text text-darken-3"><i class="material-icons right">file_upload</i>Upload recipe</a></li>
-            </ul>
-          </div>
-        </nav>
-
-        <!-- shows upload and login buttons for medium and small screen sizes -->
-        <nav class="nav-center hide-on-large-only">
-          <div class="nav-wrapper white">
-            <ul id="nav-mobile" class="show-on-medium-and-down">
-              <li><a href="/login" class="text grey-text text-darken-3"><i class="material-icons right">person_outline</i>Login</a></li>
-              <li><a href="/upload" class="text grey-text text-darken-3"><i class="material-icons right">file_upload</i>Upload recipe</a></li>
-            </ul>
-          </div>
-        </nav>
+    <!-- shows upload and login buttons for medium and small screen sizes -->
+    <nav class="nav-center hide-on-large-only">
+      <div class="nav-wrapper white">
+        <ul id="nav-mobile" class="show-on-medium-and-down">
+          <li><a href="/login" class="text grey-text text-darken-3"><i class="material-icons right">person_outline</i>Login</a></li>
+          <li><a href="/upload" class="text grey-text text-darken-3"><i class="material-icons right">file_upload</i>Upload recipe</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <%= yield %>
 
