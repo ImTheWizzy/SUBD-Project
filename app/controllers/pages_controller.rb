@@ -2,6 +2,9 @@ class PagesController < ApplicationController
     def landing
     end
 
-    def images
+    def recipes
+    end
+
+    def users
     end
 end
