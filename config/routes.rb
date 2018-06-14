@@ -3,6 +3,6 @@ Rails.application.routes.draw do
     sessions: 'users/sessions'
   }
     root 'pages#landing'
-    get '/recipes/1', to: 'pages#recipes'
-    get '/users/1', to: 'pages#users'
+    get '/recipes/:id', to: 'pages#recipes'
+    get '/users/:id', to: 'pages#users'
 end
