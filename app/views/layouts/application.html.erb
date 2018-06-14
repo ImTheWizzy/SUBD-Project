@@ -28,11 +28,11 @@
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <% if user_signed_in? %>
             <li>
-            <%= link_to('Logout', destroy_user_session_path, method: :delete, :class => 'text grey-text text-darken-3') %>
+                <%= link_to(("<i class='material-icons right'>person_outline</i>Logout").html_safe, destroy_user_session_path, method: :delete, :class => 'text grey-text text-darken-3') %>
             </li>
           <% else %>
             <li>
-            <%= link_to('Login', new_user_session_path, :class => 'text grey-text text-darken-3')  %>
+                <%= link_to(("<i class='material-icons right'>person_outline</i>Login").html_safe, new_user_session_path, :class => 'text grey-text text-darken-3')  %>
             </li>
           <% end %>
           <li><a href="/upload" class="text grey-text text-darken-3"><i class="material-icons right">file_upload</i>Upload recipe</a></li>
