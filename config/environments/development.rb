@@ -4,7 +4,7 @@ Rails.application.configure do
 
   # This line changes the format the databases are stored. Further tables are recorded
   # in db/structure.sql
-  config.active_record.schema_format = :sql
+  # config.active_record.schema_format = :sql
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
