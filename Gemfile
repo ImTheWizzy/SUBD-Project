@@ -6,6 +6,8 @@ ruby '2.5.0'
 # This gem is used for pretifying table output on rails console
 gem 'table_print'
 
+gem 'devise'
+
 gem "font-awesome-rails"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
