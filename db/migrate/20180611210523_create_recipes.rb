@@ -1,6 +1,14 @@
-require 'RawSQL.rb'
 class CreateRecipes < ActiveRecord::Migration[5.2]
 	def change
-		RawSQL.new('../../lib/sql/recipe.sql').result(some_date: '2018-06-014 22:54:34')
+		execute "
+			CREATE TABLE Recipe(
+				Id INTEGER AUTO_INCREMENT NOT NULL,
+				UserId INTEGER NOT NULL,
+				Name VARCHAR(50) NOT NULL,
+				Category VARCHAR(50) NOT NULL,
+				Description TEXT NOT NULL,
+				Recipe TEXT NOT NULL
+			);
+		"
 	end
 end
