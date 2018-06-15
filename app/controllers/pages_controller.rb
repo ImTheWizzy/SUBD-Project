@@ -5,6 +5,7 @@ class PagesController < ApplicationController
 
     def recipes
         @user = User.find(params[:id])
+        @recipe = Recipe.find(params[:id])
     end
 
     def users
