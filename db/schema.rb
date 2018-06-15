@@ -12,13 +12,13 @@
 
 ActiveRecord::Schema.define(version: 2018_06_14_213658) do
 
-  create_table "recipe", primary_key: "Id", force: :cascade do |t|
-    t.integer "UserId", null: false
-    t.string "Name", limit: 50, null: false
-    t.string "Category", limit: 50, null: false
-    t.text "Description", null: false
-    t.text "Body", null: false
-    t.index ["Id"], name: "sqlite_autoindex_recipe_1", unique: true
+  create_table "recipe", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.string "name", limit: 50, null: false
+    t.string "category", limit: 50, null: false
+    t.text "description", null: false
+    t.text "body", null: false
+    t.index ["id"], name: "sqlite_autoindex_recipe_1", unique: true
   end
 
   create_table "users", force: :cascade do |t|

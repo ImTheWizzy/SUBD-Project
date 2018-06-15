@@ -1,6 +1,6 @@
 class Recipe < ApplicationRecord
-    def self.insert(UserId, Name, Category, Description, Body)
-        sql = sanitize_sql(['INSERT INTO recipe VALUES(NULL, ?, ?, ?, ?, ?)', UserId, Name, Category, Description, Body])
+    def self.insert(user_id, name, category, description, body)
+        sql = sanitize_sql(['INSERT INTO recipe VALUES(NULL, ?, ?, ?, ?, ?)', user_id, name, category, description, body])
         ActiveRecord::Base.connection.execute(sql)
     end
 end
