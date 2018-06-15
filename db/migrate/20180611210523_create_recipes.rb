@@ -7,7 +7,9 @@ class CreateRecipes < ActiveRecord::Migration[5.2]
 				Name VARCHAR(50) NOT NULL,
 				Category VARCHAR(50) NOT NULL,
 				Description TEXT NOT NULL,
-				Recipe TEXT NOT NULL
+				Recipe TEXT NOT NULL,
+				PRIMARY KEY(Id),
+				FOREIGN KEY(UserId) REFERENCES users(id) ON DELETE CASCADE
 			);
 		"
 	end

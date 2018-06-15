@@ -8,5 +8,6 @@ class PagesController < ApplicationController
     end
 
     def users
+        @user = User.find(params[:id])
     end
 end
