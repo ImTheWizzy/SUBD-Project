@@ -1,0 +1,25 @@
+<div class="container">
+    <h2> Upload recipe </h2>
+    <%= form_for @recipe do |r| %>
+        <div class="field">
+            <%= r.label :name %><br />
+            <%= r.text_field :name, autofocus: true, autocomplete: "name" %>
+        </div>
+        <div class="field">
+            <%= r.label :user_id %><br />
+            <%= r.text_field :user_id, autofocus: true, autocomplete: "user_id" %>
+        </div>
+        <div class="field">
+            <%= r.label :category %><br />
+            <%= r.text_field :category, autofocus: true, autocomplete: "category" %>
+        </div>
+        <div class="field">
+            <%= r.label :description %><br />
+            <%= r.text_field :description, autofocus: true, autocomplete: "description" %>
+        </div>
+
+        <div class="actions">
+          <%= r.submit "Create" %>
+        </div>
+    <% end %>
+</div>
