@@ -2,7 +2,7 @@
 
 <div class="recipe-container">
     <div class="recipe-name-container">
-        <h1 class="recipe-name"><%= @user.username %>
+        <h1 class="recipe-name"><%= @recipe.name %>
         <a class="red btn btn-large waves-effect waves-light">
             <!-- if this recipe is already favourited change that icon with -->
             <!-- <i class="material-icons">favorite</i> -->
@@ -12,31 +12,26 @@
 
         <div class="recipe-uploader-container valign-wrapper">
             <div class="image-cropper z-depth-1 waves-effect waves-light hoverable">
-                <img src=<%= @user.image_url %> class="center-align" onclick="window.location.href='/users/1'">
+                <img src="<%= @user.image_url %>" class="center-align" onclick="window.location.href='/users/1'">
             </div>
             <h3 class="center-align username"><%= @user.username %></h3>
         </div>
 
         <h5 class="valign-wrapper">
             <i class="material-icons medium">access_time</i>
-            1 hr 25 mins
+            <%= @recipe.cook_time %>
         </h5>
 
         <h5 class="valign-wrapper">
             <i class="material-icons medium">local_dining</i>
-            Serves 6
+            Serves <%= @recipe.servings %>
         </h5>
 
     </div>
 
     <div class="recipe-description-container valign-wrapper">
         <p class="flow-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <%= @recipe.description %>
         </p>
     </div>
 

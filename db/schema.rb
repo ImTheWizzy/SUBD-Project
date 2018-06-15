@@ -18,6 +18,9 @@ ActiveRecord::Schema.define(version: 2018_06_14_213658) do
     t.string "category", limit: 50, null: false
     t.text "description", null: false
     t.text "body", null: false
+    t.string "cook_time", limit: 50, null: false
+    t.integer "servings", null: false
+    t.string "image_url", limit: 300, null: false
   end
 
   create_table "users", force: :cascade do |t|
